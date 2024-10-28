@@ -8,4 +8,5 @@ This branch comprises of 3 jobs :
   1. Reading a CSV file.
   2. Format conversion: CSV file is converted into JSON format.
   3. Data processing: The converted file is undergone through a data processing.
+
 The input paths for the utility are provided as arguments in the spark-submit command.
