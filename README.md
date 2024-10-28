@@ -15,9 +15,9 @@ The input paths for the utility are provided as arguments in the spark-submit co
 
 ## To compile package
 
-sbt clean
-sbt compile
-sbt package
+sbt clean \
+sbt compile \
+sbt package \
 
 ## Spark-submit command
 
