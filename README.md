@@ -12,6 +12,7 @@ This branch comprises of 3 jobs :
 The input paths for the utility are provided as arguments in the spark-submit command.
 
 ## On IDE  terminal
+
 ## To compile package
 
 sbt clean
@@ -21,11 +22,8 @@ sbt package
 ## Spark-submit command
 
 ### For format conversion
-$SPARK_HOME/bin/spark-submit \
-  --class <className> \
-  --master yarn \
-  <jar_file>.jar <csv_file_path> <output_file_path_for_json> yarn
+$SPARK_HOME/bin/spark-submit --class <className> --master yarn <jar_file_path> <csv_input_path> <output_file_path_for_json> yarn
 
-  ### For data processing
+### For data processing
 
 $SPARK_HOME/bin/spark-submit --class <className> --master yarn <jar_file_path> <csv_input_path> <json_output_path> yarn <age_threshold>
